@@ -17,5 +17,4 @@ async def main():
 
 
 if __name__ == "__main__":
-    # Some changes test
     asyncio.run(main())
