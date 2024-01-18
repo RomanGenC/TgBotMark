@@ -4,6 +4,10 @@ This repository contains a Telegram bot built using Python with the aiogram libr
 
 ## Bot Functionality
 
+- **User Data Inquiry:**
+  - Requests and retrieves user information, providing personalized responses or actions based on user data.
+  - Utilizes a PostgreSQL database for efficient storage and retrieval of user data.
+
 - **Menu with Buttons:**
   - The bot offers a user-friendly menu system composed of buttons for easy navigation and interaction.
 
@@ -48,3 +52,4 @@ This bot project aims to showcase the capabilities of aiogram, asyncio, and Pyth
 ```bash
 pip install aiogram
 pip install asyncio
+pip install psycopg2
