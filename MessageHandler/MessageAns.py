@@ -1,24 +1,9 @@
 from aiogram import Router, F
 from aiogram.types import Message
-import DevTelegramBot
+# import DevTelegramBot
 from aiogram.enums.dice_emoji import DiceEmoji
 
 router = Router()
-
-
-@router.message(F.text.lower() == "/gay")  # отправить смс в другой чат
-async def spec_button(message: Message):
-    await DevTelegramBot.bot.send_message(chat_id=-1001543097478, text="Чепухи")
-
-
-@router.message(F.text.lower() == "/karen")  # отправить смс в другой чат
-async def spec_button(message: Message):
-    await DevTelegramBot.bot.send_message(chat_id=1262243021, text="Ну что ты сегодня, спишь без трусиков?")
-
-
-@router.message(F.text.lower() == "/maks")  # отправить смс в другой чат
-async def spec_button(message: Message):
-    await DevTelegramBot.bot.send_message(chat_id=402622913, text="Ну что ты сегодня, спишь без трусиков?")
 
 
 @router.message(F.text == "/help")  # Все функции
@@ -62,7 +47,11 @@ async def button(message: Message):  # скачать видео с instagram и
         source = message.text
         source = source.replace('www.', 'dd')
         await message.answer(source)
-    else:
-        await message.answer("Пиши нормальные команды попуск")
-        await message.answer("Я не уважаю карена, он плохо считает лабы")
-        # await message.reply(message.text)
+    # else:
+    #     await message.answer("Пиши нормальные команды попуск")
+    #     await message.answer("Я не уважаю карена, он плохо считает лабы")
+    # await message.reply(message.text)
+
+# @router.message(F.text.lower() == "/maks")  # отправить смс в другой чат
+# async def spec_button(message: Message):
+#     await DevTelegramBot.bot.send_message(chat_id=402622913, text="Ну что")
